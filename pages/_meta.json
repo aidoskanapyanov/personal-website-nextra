@@ -9,7 +9,10 @@
   "index": {
     "title": "About Me",
     "theme": {
-      "layout": "raw"
+      "layout": "full",
+      "sidebar": false,
+      "toc": false,
+      "timestamp": false
     }
   }
 }
