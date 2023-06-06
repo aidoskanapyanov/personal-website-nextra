@@ -7,9 +7,9 @@
     }
   },
   "index": {
-    "display": "hidden",
+    "title": "About Me",
     "theme": {
-      "sidebar": false
+      "layout": "raw"
     }
   }
 }
