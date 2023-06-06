@@ -53,5 +53,11 @@ const themeConfig = {
   footer: {
     component: Footer,
   },
+  feedback: {
+    content: null,
+  },
+  editLink: {
+    text: null,
+  },
 };
 export default themeConfig;
