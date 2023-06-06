@@ -32,9 +32,11 @@ export function BlogIndex() {
         </Link>
         <p className="opacity-80" style={{ marginTop: ".5rem" }}>
           {page.frontMatter?.description}{" "}
-          <span className="inline-block">
-            <Link href={page.route}>{"Read more →"}</Link>
-          </span>
+          <Link href={page.route}>
+            <span className="inline-block decoration-dotted decoration-1 underline underline-offset-4 hover:no-underline">
+              {"Read more →"}
+            </span>
+          </Link>
         </p>
         {page.frontMatter?.date ? (
           <p className="opacity-50 text-sm">{page.frontMatter.date}</p>
