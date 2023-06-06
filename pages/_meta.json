@@ -1,18 +1,19 @@
 {
-  "blog": {
-    "title": "Blog",
-    "type": "page",
-    "theme": {
-      "typesetting": "article"
-    }
-  },
   "index": {
     "title": "About Me",
+    "type": "page",
     "theme": {
       "layout": "full",
       "sidebar": false,
       "toc": false,
       "timestamp": false
+    }
+  },
+  "blog": {
+    "title": "Blog",
+    "type": "page",
+    "theme": {
+      "typesetting": "article"
     }
   }
 }
