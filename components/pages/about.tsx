@@ -6,7 +6,7 @@ type Props = {};
 export default function About({}: Props) {
   return (
     <BaseLayout>
-      <article className="prose dark:prose-invert">
+      <article className="prose prose-gray dark:prose-invert">
         <h1>Garlic bread with cheese: What the science tells us</h1>
         <p>
           For years parents have espoused the health benefits of eating garlic
