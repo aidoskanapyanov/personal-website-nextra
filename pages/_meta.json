@@ -5,5 +5,11 @@
     "theme": {
       "typesetting": "article"
     }
+  },
+  "index": {
+    "display": "hidden",
+    "theme": {
+      "sidebar": false
+    }
   }
 }
