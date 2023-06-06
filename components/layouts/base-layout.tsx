@@ -8,11 +8,13 @@ type Props = {
 export default function BaseLayout({ children }: Props) {
   return (
     <div className="mt-10">
-      <div className="flex flex-col-reverse md:flex-row justify-center items-center md:items-start gap-4">
-        <div className="basis-1/3 md:mr-10">
+      <div className="grid md:grid-cols-3">
+        <div className="md:mr-10 col-span-1 order-2 md:order-1">
           <Sidebar />
         </div>
-        <div className="basis-2/3">{children}</div>
+        <div className="p-6 pb-14 md:p-14 col-span-2 order-1 md:order-2 border dark:border-none rounded-lg dark:bg-[#1c1c1d]">
+          {children}
+        </div>
       </div>
     </div>
   );
