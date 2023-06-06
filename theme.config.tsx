@@ -1,3 +1,5 @@
+import { useRouter } from "next/router";
+
 const themeConfig = {
   logo: <span>Aidos Kanapyanov</span>,
   search: {
@@ -16,6 +18,18 @@ const themeConfig = {
         />
       </svg>
     ),
+  },
+  useNextSeoProps() {
+    const { asPath } = useRouter();
+    if (asPath === "/") {
+      return {
+        titleTemplate: "Aidos Kanapyanov",
+      };
+    }
+
+    return {
+      titleTemplate: "%s | Aidos Kanapyanov",
+    };
   },
 };
 export default themeConfig;
