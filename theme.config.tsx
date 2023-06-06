@@ -1,5 +1,6 @@
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
+import { Footer } from "./components/Footer";
 import { Icons } from "./components/icons";
 
 const themeConfig = {
@@ -48,6 +49,9 @@ const themeConfig = {
     }, [timestamp]);
 
     return <>Last updated on {dateString}</>;
+  },
+  footer: {
+    component: Footer,
   },
 };
 export default themeConfig;
