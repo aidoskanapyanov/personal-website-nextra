@@ -1,5 +1,5 @@
 import React from "react";
-import BaseLayout from "./base-layout";
+import BaseLayout from "../layouts/base-layout";
 
 type Props = {};
 
