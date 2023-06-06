@@ -42,7 +42,7 @@ export function FooterContent() {
             <Icons.telegram />
           </Link>
         </div>
-        <p className="text-xs text-gray-500 dark:text-[#888888]">
+        <p className="text-xs md:text-base text-gray-500 dark:text-[#888888]">
           &copy; {new Date().getFullYear()} Aidos Kanapyanov
         </p>
       </div>
