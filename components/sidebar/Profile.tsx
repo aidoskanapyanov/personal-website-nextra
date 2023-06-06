@@ -18,7 +18,7 @@ export default function Profile({}: Props) {
       <h1 className="text-lg md:text-2xl uppercase tracking-widest font-bold">
         Aidos Kanapyanov
       </h1>
-      <p className="text-xs lg:text-sm font-thin tracking-widest uppercase decoration-dotted decoration-1 underline underline-offset-4 hover:no-underline">
+      <p className="text-xs lg:text-sm font-light tracking-widest uppercase decoration-dotted decoration-1 underline underline-offset-4 hover:no-underline">
         <a href="mailto:aidos.kanapyanov@alumni.nu.edu.kz">
           aidos.kanapyanov@alumni.nu.edu.kz
         </a>
