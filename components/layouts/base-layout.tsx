@@ -7,7 +7,7 @@ type Props = {
 
 export default function BaseLayout({ children }: Props) {
   return (
-    <div className="mt-10">
+    <div className="mt-6">
       <div className="grid md:grid-cols-3">
         <div className="md:mr-10 col-span-1 order-2 md:order-1">
           <Sidebar />
