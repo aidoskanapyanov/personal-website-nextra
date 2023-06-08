@@ -5,9 +5,6 @@ import { ReactNode, useEffect, useState } from "react";
 import { Footer } from "./components/Footer";
 import { Icons } from "./components/icons";
 
-// const SITE_ROOT = "http://localhost:3000";
-const SITE_ROOT = "https://personal-website-nextra.vercel.app";
-
 const themeConfig = {
   logo: <span className="tracking-widest font-semibold">Aidos Kanapyanov</span>,
   search: {
@@ -77,10 +74,15 @@ const themeConfig = {
   head: function Head() {
     const router = useRouter();
     const { frontMatter } = useConfig();
-    const fullUrl =
-      router.asPath === "/" ? SITE_ROOT : `${SITE_ROOT}${router.asPath}`;
+    const origin =
+      typeof window !== "undefined" && window.location.origin
+        ? window.location.origin
+        : "";
 
-    const ogUrl = `${SITE_ROOT}/api/og?title=${frontMatter.ogImageTitle}`;
+    const fullUrl =
+      router.asPath === "/" ? origin : `${origin}${router.asPath}`;
+
+    const ogUrl = `${origin}/api/og?title=${frontMatter.ogImageTitle}`;
 
     return (
       <>
