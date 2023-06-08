@@ -12,10 +12,10 @@ export default function AboutShort({}: Props) {
         alum. I thrive on learning and embracing new challenges.
       </p>
       <Link
-        href="/"
-        className="text-xs p-4 uppercase border border-gray-300 hover:border-gray-400 dark:hover:border-gray-600"
+        href="/blog"
+        className="p-4 border border-gray-300 hover:border-gray-400 dark:hover:border-gray-600"
       >
-        Learn more
+        Read my blog
       </Link>
     </section>
   );
