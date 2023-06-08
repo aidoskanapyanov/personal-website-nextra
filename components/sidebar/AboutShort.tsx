@@ -13,7 +13,7 @@ export default function AboutShort({}: Props) {
       </p>
       <Link
         href="/"
-        className="text-xs p-4 uppercase border hover:border-slate-400 dark:hover:border-slate-600"
+        className="text-xs p-4 uppercase border border-gray-300 hover:border-gray-400 dark:hover:border-gray-600"
       >
         Learn more
       </Link>
