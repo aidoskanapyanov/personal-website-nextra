@@ -1,5 +1,6 @@
 {
   "*": {
+    "display": "hidden",
     "theme": {
       "toc": true,
       "sidebar": false,
