@@ -5,6 +5,7 @@ import { ReactNode, useEffect, useState } from "react";
 import { Footer } from "./components/Footer";
 import { Icons } from "./components/icons";
 
+// const SITE_ROOT = "http://localhost:3000";
 const SITE_ROOT = "https://personal-website-nextra.vercel.app";
 
 const themeConfig = {
@@ -79,7 +80,7 @@ const themeConfig = {
     const fullUrl =
       router.asPath === "/" ? SITE_ROOT : `${SITE_ROOT}${router.asPath}`;
 
-    const ogUrl = `${SITE_ROOT}${frontMatter.ogImage}`;
+    const ogUrl = `${SITE_ROOT}/api/og?title=${frontMatter.ogImageTitle}`;
 
     return (
       <>
