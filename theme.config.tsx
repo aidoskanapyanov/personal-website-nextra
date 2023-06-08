@@ -64,7 +64,7 @@ const themeConfig = {
     a: ({ href, children }: { href: string; children: ReactNode }) => (
       <Link
         href={href}
-        className="font-semibold decoration-dotted decoration-1 underline underline-offset-4 hover:no-underline"
+        className="font-semibold decoration-dotted decoration-2 underline underline-offset-4 hover:no-underline"
       >
         {children}
       </Link>
