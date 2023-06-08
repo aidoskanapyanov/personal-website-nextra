@@ -9,6 +9,46 @@
       "timestamp": false
     }
   },
+  "resume": {
+    "title": "Resume",
+    "type": "page",
+    "theme": {
+      "layout": "full",
+      "sidebar": false,
+      "toc": false,
+      "timestamp": false
+    }
+  },
+  "projects": {
+    "title": "Projects",
+    "type": "page",
+    "theme": {
+      "layout": "full",
+      "sidebar": false,
+      "toc": false,
+      "timestamp": false
+    }
+  },
+  "stats": {
+    "title": "Stats",
+    "type": "page",
+    "theme": {
+      "layout": "full",
+      "sidebar": false,
+      "toc": false,
+      "timestamp": false
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "type": "page",
+    "theme": {
+      "layout": "full",
+      "sidebar": false,
+      "toc": false,
+      "timestamp": false
+    }
+  },
   "blog": {
     "title": "Blog",
     "type": "page",
