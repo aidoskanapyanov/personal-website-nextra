@@ -1,11 +1,10 @@
 {
   "*": {
-    "display": "hidden",
     "theme": {
       "toc": true,
       "sidebar": false,
       "pagination": false,
-      "typesetting": "article"
+      "typesetting": "default"
     }
   },
   "test-blog": "Test blog"
