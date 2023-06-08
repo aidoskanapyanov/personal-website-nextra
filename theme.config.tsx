@@ -5,7 +5,7 @@ import { Footer } from "./components/Footer";
 import { Icons } from "./components/icons";
 
 const themeConfig = {
-  logo: <span>Aidos Kanapyanov</span>,
+  logo: <span className="tracking-widest font-semibold">Aidos Kanapyanov</span>,
   search: {
     placeholder: "Search in blog…",
   },
