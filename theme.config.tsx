@@ -1,8 +1,11 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
+import { useConfig } from "nextra-theme-docs";
 import { ReactNode, useEffect, useState } from "react";
 import { Footer } from "./components/Footer";
 import { Icons } from "./components/icons";
+
+const SITE_ROOT = "https://personal-website-nextra.vercel.app";
 
 const themeConfig = {
   logo: <span className="tracking-widest font-semibold">Aidos Kanapyanov</span>,
@@ -69,6 +72,24 @@ const themeConfig = {
         {children}
       </Link>
     ),
+  },
+  head: function Head() {
+    const router = useRouter();
+    const { frontMatter } = useConfig();
+    const fullUrl =
+      router.asPath === "/" ? SITE_ROOT : `${SITE_ROOT}${router.asPath}`;
+
+    const ogUrl = `${SITE_ROOT}${frontMatter.ogImage}`;
+
+    return (
+      <>
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={fullUrl} />
+        <link rel="canonical" href={fullUrl} />
+        <meta property="og:image" content={ogUrl} />
+        <meta property="og:site_name" content="Aidos Kanapyanov" />
+      </>
+    );
   },
 };
 export default themeConfig;
