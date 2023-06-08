@@ -4,7 +4,7 @@ type Props = {};
 
 export default function AboutShort({}: Props) {
   return (
-    <section className="flex flex-col gap-4 justify-center items-start py-10">
+    <section className="flex flex-col gap-4 justify-center items-start pt-10">
       <h1 className="uppercase">About</h1>
       <p className="text-sm">
         I&apos;m Aidos Kanapyanov, a passionate software engineer with
