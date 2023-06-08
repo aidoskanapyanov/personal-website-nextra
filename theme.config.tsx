@@ -1,5 +1,6 @@
+import Link from "next/link";
 import { useRouter } from "next/router";
-import { useEffect, useState } from "react";
+import { ReactNode, useEffect, useState } from "react";
 import { Footer } from "./components/Footer";
 import { Icons } from "./components/icons";
 
@@ -58,6 +59,16 @@ const themeConfig = {
   },
   editLink: {
     text: null,
+  },
+  components: {
+    a: ({ href, children }: { href: string; children: ReactNode }) => (
+      <Link
+        href={href}
+        className="font-semibold decoration-dotted decoration-1 underline underline-offset-4 hover:no-underline"
+      >
+        {children}
+      </Link>
+    ),
   },
 };
 export default themeConfig;
