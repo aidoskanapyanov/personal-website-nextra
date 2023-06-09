@@ -82,13 +82,7 @@ const themeConfig = {
     const fullUrl =
       router.asPath === "/" ? origin : `${origin}${router.asPath}`;
 
-    const ogUrl = `${origin}/api/og?title=${encodeURIComponent(
-      frontMatter.ogImageTitle
-    )}&image=${encodeURIComponent(
-      `${origin}/_next/image?url=${frontMatter.ogImage}&w=640&q=100`
-    )}&readTime=${encodeURIComponent(
-      frontMatter.readTime
-    )}&author=${encodeURIComponent(frontMatter.author)}`;
+    const ogUrl = `${origin}/${frontMatter.ogImage}`;
 
     return (
       <>
