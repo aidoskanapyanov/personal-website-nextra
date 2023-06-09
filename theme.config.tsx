@@ -84,7 +84,11 @@ const themeConfig = {
 
     const ogUrl = `${origin}/api/og?title=${encodeURIComponent(
       frontMatter.ogImageTitle
-    )}`;
+    )}&image=${encodeURIComponent(
+      `${origin}/${frontMatter.ogImage}`
+    )}&readTime=${encodeURIComponent(
+      frontMatter.readTime
+    )}&author=${encodeURIComponent(frontMatter.author)}`;
 
     return (
       <>
