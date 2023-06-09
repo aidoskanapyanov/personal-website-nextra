@@ -83,6 +83,8 @@ const themeConfig = {
       router.asPath === "/" ? origin : `${origin}${router.asPath}`;
 
     const ogUrl = `${origin}${frontMatter.ogImage}`;
+    const author = frontMatter.author || "Aidos Kanapyanov";
+    const publishedDate = frontMatter.date;
 
     return (
       <>
@@ -93,6 +95,8 @@ const themeConfig = {
         <meta property="og:type" content="website" />
         <meta property="og:url" content={fullUrl} />
         <meta name="image" property="og:image" content={ogUrl} />
+        <meta name="author" content={author}></meta>
+        <meta property="article:published_time" content={publishedDate} />
         <meta property="og:site_name" content="Aidos Kanapyanov" />
         <link rel="canonical" href={fullUrl} />
       </>
