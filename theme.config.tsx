@@ -92,7 +92,7 @@ const themeConfig = {
         <meta name="twitter:image" content={ogUrl} />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={fullUrl} />
-        <meta property="og:image" content={ogUrl} />
+        <meta name="image" property="og:image" content={ogUrl} />
         <meta property="og:site_name" content="Aidos Kanapyanov" />
         <link rel="canonical" href={fullUrl} />
       </>
