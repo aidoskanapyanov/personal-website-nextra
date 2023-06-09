@@ -1,0 +1,53 @@
+---
+title: How I built this website
+date: 2023/06/09
+description: In this blog post, I will take you on a journey through the process of building my website using Next.js 13 and Nextra. Discover how I leveraged the features of Next.js, a popular React framework, to create a server-rendered and statically generated website. With the additional functionality and simplicity provided by Nextra, a static site generator built on top of Next.js, I was able to bring my vision to life. From setting up the project and customizing the design using Tailwind CSS, to managing content with Markdown files and incorporating dynamic data fetching, I share the steps I took to create a personalized and visually appealing website. Join me as I explore the seamless deployment process using Vercel and highlight the benefits of Next.js 13 and Nextra in simplifying website development. Whether you're a beginner or an experienced developer, this blog post will inspire and guide you in building your own stunning website.
+tag: "web development"
+ogImageTitle: How I built this website
+---
+
+<p className="text-center text-5xl my-20">How I built this website</p>
+
+import Date from "../../components/blog/Date";
+
+<Date>Friday, June 9th, 2023</Date>
+
+## Introduction
+
+I've been wanting to build a personal website for a while now. I've had a few ideas in mind, and after considering various options, I decided to go with Next.js 13 and Nextra to bring my vision to life. In this blog post, I will walk you through the process of how I built my website using these technologies.
+
+## Getting Started
+
+Before diving into the specifics of Next.js 13 and Nextra, let's briefly talk about what they are. Next.js is a popular React framework for building server-rendered and statically generated websites. It provides a fantastic developer experience with features like automatic code splitting, server-side rendering, and hot module replacement. On the other hand, Nextra is a static site generator built on top of Next.js, which adds additional functionality and simplicity to building static websites.
+
+To begin, I created a new Next.js project by running the following command:
+
+`npx create-next-app my-website`
+
+This command set up a basic Next.js project structure with all the necessary configurations. After that, I navigated to the project directory and installed Nextra by running the command:
+
+`npm install nextra`
+
+With Nextra installed, I generated the initial content and layout for my website using the provided templates. Nextra offers a variety of customizable templates for different sections of a website, including blog posts, about pages, and landing pages. I chose the appropriate templates and modified them to fit my desired design and content.
+
+## Customization and Styling
+
+Next.js 13 and Nextra offer powerful customization options. One of the main benefits of using Next.js is the ability to create reusable components. I created a components directory in my project where I stored various components used throughout the website. These components helped me keep my codebase organized and made it easier to manage and update elements across different pages.
+
+For styling, I used Tailwind CSS, a utility-first CSS framework. Tailwind CSS provides a wide range of pre-built utility classes that allowed me to rapidly style my components and achieve a consistent design across the website. I customized the default Tailwind CSS configuration file to match my desired color palette, typography, and other design preferences.
+
+## Content Management
+
+To manage the content of my website, I utilized Markdown files. Nextra supports Markdown out of the box, allowing me to write content in a simple and familiar syntax. I created Markdown files for each blog post and page, organizing them in a content directory within the project. Nextra automatically converts these Markdown files into static HTML pages during the build process.
+
+## Deployment
+
+Once I completed the development of my website, I needed to deploy it to make it accessible to the world. I chose Vercel as my deployment platform, which offers seamless integration with Next.js projects. Vercel automatically deploys my website whenever changes are pushed to my Git repository, ensuring that the latest version is always live.
+
+I connected my Git repository to Vercel and configured the deployment settings according to my preferences. With a few clicks, my website was up and running on a publicly accessible URL.
+
+## Conclusion
+
+Building my website with Next.js 13 and Nextra has been a fantastic experience. These technologies provided me with the tools and capabilities necessary to bring my vision to reality. Next.js offered excellent performance, SEO benefits, and an intuitive development experience. Nextra simplified the process of creating static websites, allowing me to focus on the content and design aspects.
+
+If you're considering building your own website, I highly recommend exploring Next.js and Nextra. They offer a powerful and flexible foundation for creating modern and performant websites. Happy coding!
