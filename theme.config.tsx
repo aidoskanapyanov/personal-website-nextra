@@ -82,7 +82,7 @@ const themeConfig = {
     const fullUrl =
       router.asPath === "/" ? origin : `${origin}${router.asPath}`;
 
-    const ogUrl = `${origin}/${frontMatter.ogImage}`;
+    const ogUrl = `${origin}${frontMatter.ogImage}`;
 
     return (
       <>
