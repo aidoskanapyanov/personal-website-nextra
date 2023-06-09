@@ -29,16 +29,6 @@
       "timestamp": false
     }
   },
-  "stats": {
-    "title": "Stats",
-    "type": "page",
-    "theme": {
-      "layout": "full",
-      "sidebar": false,
-      "toc": false,
-      "timestamp": false
-    }
-  },
   "contact": {
     "title": "Contact",
     "type": "page",
