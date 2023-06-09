@@ -30,6 +30,7 @@ export default async function handler(req: NextRequest) {
             {image ? (
               <div tw="flex relative">
                 <svg
+                  // @ts-ignore
                   tw="absolute top-[-300px] left-[-100px] opacity-20"
                   id="visual"
                   viewBox="0 0 900 600"
