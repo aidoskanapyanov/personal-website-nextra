@@ -18,7 +18,7 @@ export default function ExperienceCard({
   skills,
 }: Props) {
   return (
-    <div className="flex flex-col md:flex-row justify-center items-start gap-1 my-6 md:gap-4">
+    <div className="flex flex-col md:flex-row justify-center items-start gap-1 mt-6 mb-10 md:gap-4">
       <div className="md:basis-1/5 uppercase font-medium text-gray-500 dark:text-gray-300">
         {from} - {till}
       </div>
