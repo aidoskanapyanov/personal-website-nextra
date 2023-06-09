@@ -88,11 +88,15 @@ const themeConfig = {
 
     return (
       <>
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={frontMatter.title} />
+        <meta name="twitter:description" content={frontMatter.description} />
+        <meta name="twitter:image" content={ogUrl} />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={fullUrl} />
-        <link rel="canonical" href={fullUrl} />
         <meta property="og:image" content={ogUrl} />
         <meta property="og:site_name" content="Aidos Kanapyanov" />
+        <link rel="canonical" href={fullUrl} />
       </>
     );
   },
