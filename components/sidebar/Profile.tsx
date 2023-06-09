@@ -6,15 +6,13 @@ type Props = {};
 export default function Profile({}: Props) {
   return (
     <section className="pb-10 flex flex-col gap-y-6 items-center">
-      <Link href="/">
-        <Image
-          className="rounded-full w-40"
-          src="/avatar.jfif"
-          width={400}
-          height={400}
-          alt="profile"
-        />
-      </Link>
+      <Image
+        className="rounded-full w-40"
+        src="/avatar.jfif"
+        width={400}
+        height={400}
+        alt="profile"
+      />
       <h1 className="text-lg md:text-2xl uppercase tracking-widest font-bold">
         Aidos Kanapyanov
       </h1>
