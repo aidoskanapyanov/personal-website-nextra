@@ -84,7 +84,6 @@ const themeConfig = {
 
     const ogUrl = `${origin}${frontMatter.ogImage}`;
     const author = frontMatter.author || "Aidos Kanapyanov";
-    const publishedDate = frontMatter.date;
 
     return (
       <>
@@ -96,11 +95,6 @@ const themeConfig = {
         <meta property="og:url" content={fullUrl} />
         <meta name="image" property="og:image" content={ogUrl} />
         <meta name="author" content={author}></meta>
-        <meta
-          name="publish_date"
-          property="og:publish_date"
-          content={publishedDate + "T00:00:00-0600"}
-        />
         <meta property="og:site_name" content="Aidos Kanapyanov" />
         <link rel="canonical" href={fullUrl} />
       </>
