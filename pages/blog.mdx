@@ -10,12 +10,10 @@ import Link from "next/link";
 export function BlogHeader() {
   return (
     <div className="max-w-screen-lg mx-auto pt-4 pb-8 mb-16 border-b border-gray-400 border-opacity-20">
-      <h1>
-        <span className="font-bold leading-tight lg:text-5xl">Blog</span>
-      </h1>
-      <p className="text-center text-gray-500 dark:text-gray-400 font-space-grotesk">
+      <div className="text-center leading-snug text-5xl mt-4 mb-16 nx-text-slate-900 dark:nx-text-slate-100">Blog</div>
+      <div className="text-center text-gray-500 dark:text-gray-400 font-space-grotesk">
         Find the latest of my writing here.
-      </p>
+      </div>
     </div>
   );
 }
@@ -31,7 +29,7 @@ export function BlogIndex() {
         >
           {page.meta?.title || page.frontMatter?.title || page.name}
         </Link>
-        <p className="opacity-80" style={{ marginTop: ".5rem" }}>
+        <div className="opacity-80 mt-10">
           {page.frontMatter?.description?.slice(0, 200)}
           {" ... "}
           <Link href={page.route}>
@@ -39,9 +37,11 @@ export function BlogIndex() {
               {"Read more →"}
             </span>
           </Link>
-        </p>
+        </div>
         {page.frontMatter?.date ? (
-          <p className="opacity-50 text-sm">{page.frontMatter.date}</p>
+          <div className="opacity-50 text-sm mt-10">
+            {page.frontMatter.date}
+          </div>
         ) : null}
       </div>
     );
