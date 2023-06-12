@@ -70,6 +70,19 @@ const themeConfig = {
         {children}
       </Link>
     ),
+    h1: ({ children }: { children: ReactNode }) => (
+      <h1 className="text-center leading-snug text-5xl mt-4 mb-16 nx-text-slate-900 dark:nx-text-slate-100">
+        {children}
+      </h1>
+    ),
+    p: ({ children }: { children: ReactNode }) => (
+      <p className="nx-mt-8 nx-leading-7 first:nx-mt-0">{children}</p>
+    ),
+    ul: ({ children }: { children: ReactNode }) => (
+      <ul className="nx-mt-8 nx-list-disc first:nx-mt-0 ltr:nx-ml-6 rtl:nx-mr-6">
+        {children}
+      </ul>
+    ),
   },
   head: function Head() {
     const router = useRouter();
