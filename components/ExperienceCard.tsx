@@ -32,7 +32,7 @@ export default function ExperienceCard({
           {skills.map((skill) => (
             <span
               key={skill}
-              className="font-base py-1 px-2 drop-shadow rounded-lg bg-[#FAFAFA] dark:bg-gray-900 text-gray-500 dark:text-gray-300"
+              className="font-base py-1 px-2 drop-shadow rounded-lg bg-[#FAFAFA] dark:bg-[#222222] text-gray-500 dark:text-gray-300"
             >
               {skill}
             </span>
