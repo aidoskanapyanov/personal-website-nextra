@@ -21,7 +21,7 @@ const Age = () => {
 
 export default function Stats() {
   return (
-    <div className="mt-6 mb-10 text-gray-500 dark:text-gray-300">
+    <div className="mt-8 mb-10 text-gray-500 dark:text-gray-300">
       <div className="grid grid-cols-2 gap-4 p-4 rounded-t-xl bg-[#F8F8F8] dark:bg-[#222222]">
         <p>Current age</p>
         <p>

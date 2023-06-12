@@ -16,7 +16,7 @@ function Skill({ header, content }: SkillProps) {
 
 export default function Skills() {
   return (
-    <div className="flex flex-col md:flex-row justify-between items-start gap-10 mt-6">
+    <div className="flex flex-col md:flex-row justify-between items-start gap-10 mt-8">
       <div className="basis-1/2 grid grid-cols-1 gap-8">
         <p className="text-2xl font-semibold">Tech</p>
         <Skill
