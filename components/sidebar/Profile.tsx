@@ -12,6 +12,7 @@ export default function Profile({}: Props) {
         width={400}
         height={400}
         alt="profile"
+        priority={true}
       />
       <h1 className="text-lg md:text-2xl uppercase tracking-widest font-bold">
         Aidos Kanapyanov
