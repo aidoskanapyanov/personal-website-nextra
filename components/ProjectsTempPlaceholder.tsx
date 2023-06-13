@@ -12,7 +12,7 @@ export default function ProjectsTempPlaceholder({}: Props) {
 
   return (
     <div className="mx-8 h-60 md:h-80">
-      <Lottie options={options} />
+      <Lottie options={options} isClickToPauseDisabled />
     </div>
   );
 }
